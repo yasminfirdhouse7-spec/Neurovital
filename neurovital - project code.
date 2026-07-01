@@ -337,6 +337,7 @@ void userHistory() {
     file << "\n===== USER HISTORY =====\n";
     file << "Username: " << username << endl;
     file << "Water Intake: " << waterGlasses << endl;
+   file <<"mood:"<<mood<<endl;
     file << "Sleep Hours: " << sleepHours << endl;
     file << "Heart Rate: " << heartRate << endl;
     file << "BMI: " << bmi << endl;
@@ -421,18 +422,19 @@ int main() {
 
         cout << "1. Water Tracker\n";
         cout << "2. Sleep Tracker\n";
-        cout << "3. Medicine Reminder\n";
-        cout << "4. Symptom Checker\n";
-        cout << "5. Health Dashboard\n";
-        cout << "6. AI Chatbot\n";
-        cout << "7. AI Health Tips\n";
-        cout << "8. Health Risk System\n";
-        cout << "9. Daily Health Report\n";
-        cout << "10. Save User History\n";
-        cout << "11. Heart Rate Monitor\n";
-        cout << "12. BMI Calculator\n";
-        cout << "13. Emergency Alert System\n";
-        cout << "14. Exit\n";
+        cout << "3. mood Tracker \n";
+        cout << "4. Medicine Reminder\n";
+        cout << "5. Symptom Checker\n";
+        cout << "6. Health Dashboard\n";
+        cout << "7. AI Chatbot\n";
+        cout << "8. AI Health Tips\n";
+        cout << "9. Health Risk System\n";
+        cout << "10. Daily Health Report\n";
+        cout << "11. Save User History\n";
+        cout << "12. Heart Rate Monitor\n";
+        cout << "13. BMI Calculator\n";
+        cout << "14. Emergency Alert System\n";
+        cout << "15. Exit\n";
 
         cout << "\nEnter your choice: ";
         cin >> choice;
@@ -448,50 +450,54 @@ int main() {
                 break;
 
             case 3:
+               mood Tracker ();
+               break;
+
+            case 4:
                 medicineReminder();
                 break;
 
-            case 4:
+            case 5:
                 symptomChecker();
                 break;
 
-            case 5:
+            case 6:
                 healthDashboard();
                 break;
 
-            case 6:
+            case 7:
                 aiChatbot();
                 break;
 
-            case 7:
+            case 8:
                 aiHealthTips();
                 break;
 
-            case 8:
+            case 9:
                 healthRiskSystem();
                 break;
 
-            case 9:
+            case 10:
                 dailyHealthReport();
                 break;
 
-            case 10:
+            case 11:
                 userHistory();
                 break;
 
-            case 11:
+            case 12:
                 heartRateMonitor();
                 break;
 
-            case 12:
+            case 13:
                 bmiCalculator();
                 break;
 
-            case 13:
+            case 14:
                 emergencyAlertSystem();
                 break;
 
-            case 14:
+            case 15:
                 cout << "\nThank you for using the system!\n";
                 break;
 
@@ -499,7 +505,7 @@ int main() {
                 cout << "\nInvalid choice!\n";
         }
 
-    } while(choice != 14);
+    } while(choice != 15);
 
     return 0;
 }
