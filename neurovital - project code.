@@ -296,6 +296,7 @@ void healthDashboard() {
 
     cout << "Username: " << username << endl;
     cout << "Water Intake: " << waterGlasses << " glasses\n";
+    count << " moodTracker " << mood << endl;
     cout << "Sleep Hours: " << sleepHours << " hours\n";
     cout << "Heart Rate: " << heartRate << " BPM\n";
     cout << "BMI: " << bmi << endl;
@@ -447,7 +448,7 @@ int main() {
                 break;
 
             case 3:
-               mood Tracker ();
+               moodTracker ();
                break;
 
             case 4:
