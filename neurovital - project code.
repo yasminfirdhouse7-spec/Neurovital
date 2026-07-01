@@ -36,24 +36,21 @@ void loadingEffect() {
 
     cout << "\n";
 }
+ 
+void water Tracker () {
 
-void waterTracker() {
+count<< "\n=====water Tracker===== \n";
 
-    cout << "\n===== WATER TRACKER =====\n";
+cout << "Daily Goal: " << waterGoal << " glasses\n";
 
-    cout << "How many glasses of water did you drink today? ";
-    cin >> waterGlasses;
-
-    if(waterGlasses < 5) {
-
-        cout << "Notification: Drink more water!\n";
-        healthScore -= 15;
-    }
-
-    else {
-
-        cout << "Good hydration!\n";
-    }
+if(waterGlasses < waterGoal)
+{
+    cout << "You need " << (waterGoal - waterGlasses)
+         << " more glasses to reach your goal.\n";
+}
+else
+{
+    cout << "Congratulations! Water goal achieved.\n";
 }
 
 void sleepTracker() {
