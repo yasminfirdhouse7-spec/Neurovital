@@ -305,7 +305,7 @@ void healthDashboard() {
     cout << "\n===== HEALTH DASHBOARD =====\n";
 
     cout << "Username: " << username << endl;
-    cout << "Water Intake: " << WaterGlasses << " glasses\n";
+    cout << "Water Intake: " << waterGlasses << " glasses\n";
     cout << " MoodTracker " << Mood << endl;
     cout << "Sleep Hours: " << sleepHours << " hours\n";
     cout << "Heart Rate: " << heartRate << " BPM\n";
