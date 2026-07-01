@@ -36,7 +36,7 @@ void loadingEffect() {
 
     cout << "\n";
 }
- 
+
 void waterTracker()
 {
     cout << "\n===== WATER TRACKER =====\n";
@@ -58,7 +58,10 @@ void waterTracker()
     }
     else
     {
-        cout << "Congratulations!
+        cout << "Congratulations! Water goal achieved!\n";
+        healthScore += 5;
+    }
+}
 
 void sleepTracker() {
 
@@ -83,22 +86,22 @@ void MoodTracker() {
 
     cout << "\n===== MOOD TRACKER =====\n";
 
-    cout << "Enter your mood (happy/sad/average): ";
-    cin >> mood;
+    cout << "Enter your Mood (happy/sad/average): ";
+    cin >> Mood;
 
-    if(mood == "happy") {
+    if(Mood == "happy") {
 
         cout << "Great! Keep smiling today.\n";
         healthScore += 5;
     }
 
-    else if(mood == "sad") {
+    else if(Mood == "sad") {
 
         cout << "Take some rest and relax.\n";
         healthScore -= 5;
     }
 
-    else if(mood == "average") {
+    else if(Mood == "average") {
 
         cout << "Hope your day gets even better.\n";
     }
@@ -302,8 +305,8 @@ void healthDashboard() {
     cout << "\n===== HEALTH DASHBOARD =====\n";
 
     cout << "Username: " << username << endl;
-    cout << "Water Intake: " << waterGlasses << " glasses\n";
-    count << " MoodTracker " << mood << endl;
+    cout << "Water Intake: " << WaterGlasses << " glasses\n";
+    cout << " MoodTracker " << Mood << endl;
     cout << "Sleep Hours: " << sleepHours << " hours\n";
     cout << "Heart Rate: " << heartRate << " BPM\n";
     cout << "BMI: " << bmi << endl;
@@ -455,7 +458,7 @@ int main() {
                 break;
 
             case 3:
-               moodTracker ();
+               MoodTracker ();
                break;
 
             case 4:
