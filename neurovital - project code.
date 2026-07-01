@@ -13,8 +13,8 @@ string password;
 int waterGlasses = 0;
 int sleepHours = 0;
 
-string mood;
-int waterGoal=8;
+string Mood;
+int WaterGoal=8;
 
 string medicineName;
 string medicineTime;
@@ -37,21 +37,28 @@ void loadingEffect() {
     cout << "\n";
 }
  
-void water Tracker () {
-
-count<< "\n=====water Tracker===== \n";
-
-cout << "Daily Goal: " << waterGoal << " glasses\n";
-
-if(waterGlasses < waterGoal)
+void waterTracker()
 {
-    cout << "You need " << (waterGoal - waterGlasses)
-         << " more glasses to reach your goal.\n";
-}
-else
-{
-    cout << "Congratulations! Water goal achieved.\n";
-}
+    cout << "\n===== WATER TRACKER =====\n";
+
+    cout << "How many glasses of water did you drink today? ";
+    cin >> waterGlasses;
+
+    cout << "Daily Goal: " << waterGoal << " glasses\n";
+
+    if(waterGlasses < waterGoal)
+    {
+        cout << "You need "
+             << (waterGoal - waterGlasses)
+             << " more glasses to reach your goal.\n";
+
+        cout << "Reminder: Drink more water!\n";
+
+        healthScore -= 5;
+    }
+    else
+    {
+        cout << "Congratulations!
 
 void sleepTracker() {
 
@@ -72,7 +79,7 @@ void sleepTracker() {
     }
 }
 
-void moodTracker() {
+void MoodTracker() {
 
     cout << "\n===== MOOD TRACKER =====\n";
 
@@ -296,7 +303,7 @@ void healthDashboard() {
 
     cout << "Username: " << username << endl;
     cout << "Water Intake: " << waterGlasses << " glasses\n";
-    count << " moodTracker " << mood << endl;
+    count << " MoodTracker " << mood << endl;
     cout << "Sleep Hours: " << sleepHours << " hours\n";
     cout << "Heart Rate: " << heartRate << " BPM\n";
     cout << "BMI: " << bmi << endl;
@@ -335,7 +342,7 @@ void userHistory() {
     file << "\n===== USER HISTORY =====\n";
     file << "Username: " << username << endl;
     file << "Water Intake: " << waterGlasses << endl;
-   file <<"mood:"<<mood<<endl;
+   file <<"Mood:"<<Mood<<endl;
     file << "Sleep Hours: " << sleepHours << endl;
     file << "Heart Rate: " << heartRate << endl;
     file << "BMI: " << bmi << endl;
@@ -420,7 +427,7 @@ int main() {
 
         cout << "1. Water Tracker\n";
         cout << "2. Sleep Tracker\n";
-        cout << "3. mood Tracker \n";
+        cout << "3. Mood Tracker \n";
         cout << "4. Medicine Reminder\n";
         cout << "5. Symptom Checker\n";
         cout << "6. Health Dashboard\n";
