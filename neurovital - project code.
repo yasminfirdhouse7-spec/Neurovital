@@ -13,6 +13,9 @@ string password;
 int waterGlasses = 0;
 int sleepHours = 0;
 
+string mood;
+int waterGoal=8;
+
 string medicineName;
 string medicineTime;
 
@@ -69,6 +72,36 @@ void sleepTracker() {
     else {
 
         cout << "Good sleep schedule!\n";
+    }
+}
+
+void moodTracker() {
+
+    cout << "\n===== MOOD TRACKER =====\n";
+
+    cout << "Enter your mood (happy/sad/average): ";
+    cin >> mood;
+
+    if(mood == "happy") {
+
+        cout << "Great! Keep smiling today.\n";
+        healthScore += 5;
+    }
+
+    else if(mood == "sad") {
+
+        cout << "Take some rest and relax.\n";
+        healthScore -= 5;
+    }
+
+    else if(mood == "average") {
+
+        cout << "Hope your day gets even better.\n";
+    }
+
+    else {
+
+        cout << "Mood recorded successfully.\n";
     }
 }
 
