@@ -14,7 +14,7 @@ int waterGlasses = 0;
 int sleepHours = 0;
 
 string Mood;
-int WaterGoal=8;
+int waterGoal=8;
 
 string medicineName;
 string medicineTime;
