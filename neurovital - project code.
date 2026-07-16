@@ -411,7 +411,7 @@ int main() {
     int choice;
 
     cout << "=====================================\n";
-    cout << " SMART HEALTH CARE ASSISTANT\n";
+    cout << " NEUROVITAL \n";
     cout << "=====================================\n";
 
     cout << "\nCreate Username: ";
